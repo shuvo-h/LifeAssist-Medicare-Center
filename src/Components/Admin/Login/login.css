@@ -1,0 +1,21 @@
+.login-form{
+    width: 400px;
+}
+.login-form input{
+    width: 100%;
+}
+.btn-login{
+    background-color: skyblue;
+}
+.btn-login:hover{
+    background-color: rgb(24, 159, 212);
+    color: white;
+}
+
+.login-icon-btn{
+    background-color: transparent;
+}
+.login-icon-btn:hover{
+    box-shadow: 0 0 5px 5px lightskyblue;
+    border-radius: 20px;
+}

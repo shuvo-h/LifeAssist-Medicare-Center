@@ -1,0 +1,11 @@
+.guest-dr{
+    transform: translateY(-40px);
+    background-color: rgba(61, 194, 204, 0.377);
+    backdrop-filter: blur(15px);
+    z-index: 2;
+    box-shadow: 0 0 15px 5px rgb(134, 85, 180);
+}
+.guest-img{
+    width: 50%;
+    border-radius: 50%;
+}

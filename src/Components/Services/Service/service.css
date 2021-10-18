@@ -1,0 +1,18 @@
+.service-item{
+    box-shadow: 0 0 2px 2px lightblue;
+    transition: box-shadow 0.3s linear;
+}
+
+.service-item:hover{
+    box-shadow: 0 0 3px 3px lightblue;
+    background-color: rgba(171, 216, 231, 0.3);
+}
+.btn-service-info{
+    background-color: rgb(122, 168, 236);
+    color: blue;
+    text-decoration: none;
+}
+.btn-service-info:hover{
+    background-color: rgb(6, 134, 240);
+    color: white;
+}

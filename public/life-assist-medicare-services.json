@@ -1,0 +1,56 @@
+ [
+  {
+    "service_id": "LMC001",
+    "service_name": "Pharmacy and Diagnosis",
+    "service_img": "https://i.ibb.co/p3NYSTp/service-1-Pharmacy-and-Diagnosis.jpg",
+    "service_txt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi dolorem voluptatem facilis illum omnis? ",
+    "service_fees": 80,
+    "service_dept": "Medical and Treatment",
+    "service_manager": "Dr. Elise Kandra"
+  },
+  {
+    "service_id": "LMC002",
+    "service_name": "Surgical Services",
+    "service_img": "https://i.ibb.co/xqGYm6K/service-2-Surgical-Service.jpg",
+    "service_txt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi dolorem voluptatem facilis illum omnis?",
+    "service_fees": 200,
+    "service_dept": "Medical and Treatment",
+    "service_manager": "Dr. Mattie Hossler"
+  },
+  {
+    "service_id": "LMC003",
+    "service_name": "Laboratory Services",
+    "service_img": "https://i.ibb.co/86qBrCD/service-3-Laboratory-Services.jpg",
+    "service_txt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi dolorem voluptatem facilis illum omnis?",
+    "service_fees": 250,
+    "service_dept": "Laboratory and Equipment",
+    "service_manager": "Dr. Shawn Soteros"
+  },
+  {
+    "service_id": "LMC004",
+    "service_name": "Intensive Care Unit(ICU)",
+    "service_img": "https://i.ibb.co/DRXbmdg/service-4-Intensive-Care-Unit-ICU.jpg",
+    "service_txt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi dolorem voluptatem facilis illum omnis?",
+    "service_fees": 300,
+    "service_dept": "Medical and Treatment",
+    "service_manager": "Dr. Delbert Grammes"
+  },
+  {
+    "service_id": "LMC005",
+    "service_name": "Nursing Services",
+    "service_img": "https://i.ibb.co/ryYQcJY/service-5-Nursing-Services.jpg",
+    "service_txt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi dolorem voluptatem facilis illum omnis?",
+    "service_fees": 70,
+    "service_dept": "Nursing and Caring",
+    "service_manager": "Dr. Ray Lenoch"
+  },
+  {
+    "service_id": "LMC006",
+    "service_name": "Ambulance Service",
+    "service_img": "https://i.ibb.co/68sD2p2/service-6-Ambulance-Service.jpg",
+    "service_txt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi dolorem voluptatem facilis illum omnis?",
+    "service_fees": 50,
+    "service_dept": "Ambulance and Transportation",
+    "service_manager": "Andre Fruth"
+  }
+]

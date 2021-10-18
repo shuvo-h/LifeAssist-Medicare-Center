@@ -1,0 +1,6 @@
+.carousol-img{
+    height: 400px;
+}
+.carousel-text{
+    backdrop-filter: blur(5px);
+}
