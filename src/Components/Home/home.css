@@ -1,22 +1,12 @@
 .banner-text-container{
-    background-image: url('https://i.ibb.co/LSrR87v/hospital-wave.png');
     background-repeat: no-repeat;
-    background-size: contain;
-
-    position: relative;
-    overflow: hidden;
-}
-.banner-back-img{
-    /* background-image: url('../../images/banner-image/banner-1.png'); */
-    /* background-size: 100% 100%; */
-    /* background-repeat: no-repeat; */
-
-    /* position: absolute; */
-    /* right: 0; */
-    /* width: 90%; */
-    /* height: 100%; */
+    background-size: 100% 100%;
+    background-image: url('../../images/banner-image/banner-2.jpg');
 }
 
+.banner-text{
+    width: 60%;
+}
 .banner-text h3{
     margin-top: 10%;
 }
@@ -26,4 +16,13 @@
     font-size: larger;
 }
 
+.banner-appointment-btn{
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(45deg,orange,rgb(240, 158, 172));
+}
+.banner-appointment-btn:hover{
+    background-image: linear-gradient(45deg,rgb(228, 128, 145),orange);
+    color: blue;
+}
 

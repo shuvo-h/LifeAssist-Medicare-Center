@@ -1,0 +1,18 @@
+.doctor-cart{
+    box-shadow: 0 0 3px 0.2px;
+}
+.doctor-cart:hover{
+    background-color: rgb(221, 229, 243);
+}
+.doctor-img{
+    height: 200px;
+}
+.appointment-profile-btn{
+    text-decoration: none;
+    background-color: lightskyblue;
+    color: blue;
+}
+.appointment-profile-btn:hover{
+    background-color: rgba(0, 0, 255, 0.658);
+    color: white;
+}

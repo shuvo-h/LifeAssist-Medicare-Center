@@ -44,7 +44,7 @@ const Login = () => {
             .finally(()=>setIsLoading(false))
     }
     return (
-        <div className="mt-5">
+        <div className="login-container mt-5">
             <h2 className="text-center">Login From</h2>
             <form onSubmit={handleLoginForm} className="login-form mx-auto">
                 <label htmlFor="email">Email: </label> <br />

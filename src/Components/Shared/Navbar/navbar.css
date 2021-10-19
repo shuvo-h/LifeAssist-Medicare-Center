@@ -1,99 +1,21 @@
-
-.nav-container{
-    display: grid;
-    grid-template-columns: 10rem 4fr 8fr 1fr 10rem;
-    font-size: 22px;
-    font-weight: 700;
-    background-color: #577de6;
-    color: #ffffff;
-    height: 5rem;
-}
-.brand-name{
-    grid-column: 2/3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: rgb(107, 255, 102);
-    font-family: cursive;
-}
-.nav-list{
-    grid-column: 3/4;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-.nav-items{
-    display: flex;
-    margin: 0;
-}
-.nav-item{
-    padding: 8px 20px;
-    color: white;
-    text-decoration: none;  
-}
-.nav-item:hover{
-    text-decoration: underline;
-    color: wheat;
-}
-.collapse-icon{
-    display: none;
-}
-
-/* nav class for mobile or small devices  */
-
-@media only screen and (max-width: 688px) {
-
-
-
-.mob-nav-container{
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #577de6;
-    color: #ffffff;
+.navbar-container{
+    background-color: rgba(81, 81, 230, 0.815);
     height: 70px;
 }
-.mob-nav-container-expand{
-    height: 200px;
-    box-shadow: 0px 0px 20px 5px;
+.nav-item{
+    color: white;
 }
-.mob-brand-name-hide{
-    display: none;
-}
-.mob-brand-name-show{
-    display: flex;
-    font-size: 20px;
-    position: absolute;
-    top: 20px;
-    left: 50px;
-}
-.mob-nav-list{
-    display: none;
-    margin-right: auto;
-    transition: all 0.7s ease-in;
-}
-.mob-nav-list-show{
-    display: flex;
-}
-.mob-nav-items{
-    display: block;
-    list-style: none;
-}
-.mob-nav-item{
-    padding: 5px 0;
-}
-.mob-nav-item:hover{
+.nav-item:hover{
+
     text-decoration: underline;
-    }
-.mob-collapse-icon{
-    grid-column: 4/5;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-right: 10px;
-    cursor: pointer;
 }
 
+.nav-appointment-btn{
+    color: white;
+    background-image: linear-gradient(45deg,orange,rgb(240, 158, 172));
+}
+.nav-appointment-btn:hover{
+    background-image: linear-gradient(45deg,rgb(228, 128, 145),orange);
+    color: blue;
+    text-decoration: none;
 }

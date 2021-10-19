@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import './register.css';
 
 const Register = () => {
     const [name,setName] = useState('');
@@ -19,7 +20,7 @@ const Register = () => {
         history.push('/home')
     }
     return (
-        <div className="mt-5">
+        <div className="register-container mt-5">
             <h2 className="text-center">Registration From</h2>
             <form onSubmit={handleRegistration} className="login-form mx-auto">
                 <label htmlFor="name">Full Name: </label> <br />

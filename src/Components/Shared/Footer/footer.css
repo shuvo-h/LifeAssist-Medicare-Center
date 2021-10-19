@@ -1,0 +1,17 @@
+footer{
+    background-color: rgba(81, 81, 230, 0.815);
+    height: 250px;
+}
+.news-subscribe-btn{
+    background-color: blue;
+}
+.news-subscribe-btn:hover{
+    background-color: navy;
+    color: yellow;
+}
+.btn-hover-effect{
+    text-decoration: none;
+}
+.btn-hover-effect:hover{
+    text-decoration: underline;
+}
