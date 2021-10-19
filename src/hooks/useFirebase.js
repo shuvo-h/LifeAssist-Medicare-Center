@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import firebaseInitialization from '../firebase/firebase.init';
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged ,createUserWithEmailAndPassword , signInWithEmailAndPassword, FacebookAuthProvider, GithubAuthProvider  , signOut } from "firebase/auth";
+import { getAuth, signInWithPopup,updateProfile, GoogleAuthProvider, onAuthStateChanged ,createUserWithEmailAndPassword , signInWithEmailAndPassword, FacebookAuthProvider, GithubAuthProvider  , signOut } from "firebase/auth";
 
 
 
@@ -55,6 +55,10 @@ const useFirebase = () => {
         return signInWithPopup(auth,gitHubProvider)
     }
 
+    const updateNewName = (auth,name) =>{
+        return updateProfile(auth, name)
+    }
+
     const LogOut = () =>{
         setIsLoading(true);
         signOut(auth)
@@ -63,9 +67,11 @@ const useFirebase = () => {
     }
 
     return {
+        auth,
         user,
         error,
         isLoading,
+        updateNewName,
         setError,
         setUser,
         setIsLoading,

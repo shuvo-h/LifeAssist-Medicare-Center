@@ -7,10 +7,16 @@ const Register = () => {
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
-    const {createAccountWithEmailPassword, setIsLoading, setUser, error,setError} = useAuth();
+    const {createAccountWithEmailPassword,auth,updateNewName, setIsLoading, setUser, error,setError} = useAuth();
 
     const history = useHistory();
 
+    const setUserName = () =>{
+        updateNewName(auth.currentUser, {
+            displayName: name
+          })
+          .then(result=>{})
+    }
 
     const handleRegistration = (e) => {
         e.preventDefault();
@@ -38,6 +44,7 @@ const Register = () => {
         .then(result=>{
             setUser(result.user);
             setError('');
+            setUserName();
         })
         .catch(error=>setError(error.message))
         .finally(()=>setIsLoading(false))

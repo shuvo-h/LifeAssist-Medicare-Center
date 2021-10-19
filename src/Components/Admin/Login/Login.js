@@ -22,25 +22,41 @@ const Login = () => {
         e.preventDefault();
         setIsLoading(true);
         SignInExistUserWithEmailPassword(email,password)
-            .then(()=>history.push(location.state?.from))
+            .then(()=>{
+                history.push(location.state?.from)
+                setError("")
+            })
+            .catch(error=>setError(error.message))
             .finally(()=>setIsLoading(false))
     }
     const handleLoginWithGoogle = () =>{
         setIsLoading(true);
         signInWithGoogle()
-            .then(()=>history.push(location.state?.from))
+            .then(()=>{
+                history.push(location.state?.from)
+                setError("");
+            })
+            .catch(error=>setError(error.message))
             .finally(()=>setIsLoading(false))
     }
     const handleLoginWithFacebook = () =>{
         setIsLoading(true);
         signInWithFacebook()
-            .then(()=>history.push(location.state?.from))
+        .then(()=>{
+            history.push(location.state?.from)
+            setError("");
+        })
+        .catch(error=>setError(error.message))
             .finally(()=>setIsLoading(false))
     }
     const handleLoginWithGitHub = () =>{
         setIsLoading(true);
         signInWithGitHub()
-            .then(()=>history.push(location.state?.from))
+        .then(()=>{
+            history.push(location.state?.from)
+            setError("");
+        })
+        .catch(error=>setError(error.message))
             .finally(()=>setIsLoading(false))
     }
     return (
