@@ -18,7 +18,9 @@
     "training": "",
     "research": "",
     "special_achievement": "",
-    "programs_participate": ""
+    "programs_participate": "",
+    "serv_area": "Pharmacy and Diagnosis"
+    
   },
   {
     "doc_id": "lasMcC-Doc-02",
@@ -39,7 +41,8 @@
     "training": "",
     "research": "",
     "special_achievement": "",
-    "programs_participate": ""
+    "programs_participate": "",
+    "serv_area": "Laboratory Services"
   },
   {
     "doc_id": "lasMcC-Doc-03",
@@ -60,7 +63,8 @@
     "training": "",
     "research": "",
     "special_achievement": "",
-    "programs_participate": ""
+    "programs_participate": "",
+    "serv_area": "Surgical Services"
   },
   {
     "doc_id": "lasMcC-Doc-04",
@@ -81,7 +85,8 @@
     "training": "",
     "research": "",
     "special_achievement": "",
-    "programs_participate": ""
+    "programs_participate": "",
+    "serv_area": "Surgical Services"
   },
   {
     "doc_id": "lasMcC-Doc-05",
@@ -102,7 +107,8 @@
     "training": "",
     "research": "",
     "special_achievement": "",
-    "programs_participate": ""
+    "programs_participate": "",
+    "serv_area": "Intensive Care Unit(ICU)"
   },
   {
     "doc_id": "lasMcC-Doc-06",
@@ -123,7 +129,8 @@
     "training": "",
     "research": "",
     "special_achievement": "",
-    "programs_participate": ""
+    "programs_participate": "",
+    "serv_area": "Laboratory Services"
   },
   {
     "doc_id": "lasMcC-Doc-07",
@@ -145,6 +152,7 @@
     "training": "",
     "research": "",
     "special_achievement": "",
-    "programs_participate": ""
+    "programs_participate": "",
+    "serv_area": "Pharmacy and Diagnosis"
   }
 ]

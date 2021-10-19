@@ -13,7 +13,7 @@ const App = () => {
       
 
 return (
-      <Navbar className="navbar-container" expand="lg">
+      <Navbar className="navbar-container" expand="lg" >
         <Container>
           <Navbar.Brand><Link to='/home' className="text-white fw-bold text-decoration-none">LifeAssist Medicare Center</Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

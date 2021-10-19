@@ -1,4 +1,8 @@
+.service-details-container{
+     min-height: calc(100vh - 366px);
+}
 .service-details-img{
     width: 350px;
     float: right;
 }
+

@@ -7,7 +7,7 @@ const Register = () => {
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
-    const {createAccountWithEmailPassword, setIsLoading} = useAuth();
+    const {createAccountWithEmailPassword, setIsLoading, setUser} = useAuth();
 
     const history = useHistory();
 
@@ -16,6 +16,10 @@ const Register = () => {
         e.preventDefault();
         setIsLoading(true)
         createAccountWithEmailPassword(email, password)
+        .then(result=>{
+            setUser(result.user);
+            window.location.reload();
+        })
         .finally(()=>setIsLoading(false))
         history.push('/home')
     }
