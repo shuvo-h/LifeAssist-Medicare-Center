@@ -9,7 +9,7 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col lg={3} md={6} sm={12}  className="d-flex">
-                        <div className="my-auto">
+                        <div className="my-auto mx-auto ms-lg-0">
                             <h5>SUBSCRIBE NEWSLETTER</h5>
                             <Form>
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -19,7 +19,7 @@ const Footer = () => {
                             </Form>
                         </div>
                     </Col>
-                    <Col lg={3} md={6} sm={12} className="d-flex flex-column">
+                    <Col lg={3} md={6} sm={6} xs={6} className="d-flex flex-column text-center">
                         <h5>QUICK LINKS</h5>
                         <Link to="" className="btn-hover-effect text-white fw-bold">About Us</Link>
                         <Link to="" className="btn-hover-effect text-white fw-bold">Our Doctors</Link>
@@ -28,7 +28,7 @@ const Footer = () => {
                         <Link to="" className="btn-hover-effect text-white fw-bold">Contact</Link>
                         <Link to="" className="btn-hover-effect text-white fw-bold">Appointment</Link>
                     </Col>
-                    <Col lg={3} md={6} sm={12} className="d-flex flex-column">
+                    <Col lg={3} md={6} sm={6} xs={6} className="d-flex flex-column text-center">
                         <h5>HELP LINKS</h5>
                         <Link to="" className="btn-hover-effect text-white fw-bold">Departments</Link>
                         <Link to="" className="btn-hover-effect text-white fw-bold">Sponsors</Link>
@@ -36,7 +36,7 @@ const Footer = () => {
                         <Link to="" className="btn-hover-effect text-white fw-bold">Emergency Unit</Link>
                     </Col>
                     <Col lg={3} md={6} sm={12}>
-                        <h5>CONTACT</h5>
+                        <h5 className="text-center">CONTACT</h5>
                         <p className="text-white">Pratt AveEl Paso, TX 79936,<br />
                             United States of America</p>
                         <p className="m-0 text-white">Phone Number:	<i>360-885-5159</i>,</p>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-                <p className="text-white mt-2 p-2 bg-primary text-center"> &copy; 2022 Copyright by Medico. All rights reserved.</p>
+                <p className="text-white m-0 mt-2 p-2 bg-primary text-center"> &copy; 2022 Copyright by Medico. All rights reserved.</p>
         </footer>
     );
 };

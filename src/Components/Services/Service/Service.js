@@ -7,7 +7,7 @@ const Service = (props) => {
     const {service_name, service_img, service_id, service_txt } = props.service;
     const shortDescription = service_txt.slice(0,110);
     return (
-        <Col md={4} className=" p-4">
+        <Col lg={4} md={6} className=" p-4">
             <Row className="service-item p-1 rounded">
                 <Col>
                     <img className="img-fluid" src={service_img} alt="" />

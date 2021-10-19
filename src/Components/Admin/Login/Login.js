@@ -57,6 +57,7 @@ const Login = () => {
                 <p className="d-inline me-2">New here?</p>
                 <Link to="/register">Register first</Link>
             </div>
+                <p className="text-center mt-4"><strong>Or login with</strong></p>
             <div className="d-flex justify-content-center mt-4">
                 <button onClick={handleLoginWithGoogle} className="login-icon-btn border-0 "><IconContext.Provider value={{  size:"60", className: " global-class-name " }}><FcGoogle /></IconContext.Provider></button>
                 <button onClick={handleLoginWithFacebook} className="login-icon-btn border-0 "><IconContext.Provider value={{ size:"60", color: "RoyalBlue", className: "global-class-name" }}><GrFacebook /></IconContext.Provider></button>

@@ -9,16 +9,16 @@ const Equipment = (props) => {
     const cartText = text.slice(0, 100);
 
     return (
-        <Col lg={6} md={12} className="px-4 py-3">
+        <Col lg={6} md={6} sm={12} className="px-4 py-3">
             <Row className="equipment-card p-2">
-                <Col>
+                <Col lg={6} md={12}>
+                    <img className=" img-fluid rounded" src={equip_img} alt="" />
+                </Col>
+                <Col lg={6} md={12}>
                     <p><strong>{equip_name}</strong>(Imported from {imported}, {imported_year})</p>
                     <p><strong>Incharge: {incharge}</strong></p>
                     <p>{cartText}.....</p>
                     <Link to="" className="bg-light rounded">See Details</Link>
-                </Col>
-                <Col>
-                    <img className=" img-fluid rounded" src={equip_img} alt="" />
                 </Col>
             </Row>
         </Col>
