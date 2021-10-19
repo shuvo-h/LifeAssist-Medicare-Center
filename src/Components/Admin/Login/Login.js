@@ -13,7 +13,7 @@ import { BsGithub } from 'react-icons/bs';
 const Login = () => {
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
-    const {SignInExistUserWithEmailPassword, signInWithGoogle, signInWithFacebook, signInWithGitHub, setIsLoading} = useAuth();
+    const {SignInExistUserWithEmailPassword, signInWithGoogle, signInWithFacebook, signInWithGitHub, setIsLoading, error,setError} = useAuth();
 
     const history = useHistory();
     const location = useLocation();
