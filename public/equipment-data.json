@@ -1,0 +1,52 @@
+ [
+  {
+    "equip_id": "eq-01",
+    "equip_name": "X-Ray Machine",
+    "imported": "Japan",
+    "text": "we imported this X-ray machine from Japan. We can Provide the result in 48 hours. Dr. Ivy Linen is incharge of this expensive and valiuable medical machine. you can book an appointment by discussion with the incharge to do a scan for checkup. We don't allow to use this machine except medical purpose. ",
+    "equip_img": "https://i.ibb.co/25ydthK/equipment-1.jpg",
+    "price": "18000",
+    "imported_year": "2015",
+    "incharge": "Dr. Ivy Linen"
+  },
+  {
+    "equip_id": "eq-02",
+    "equip_name": "Surgical Robots",
+    "imported": "Korea",
+    "text": "Robotic surgery has been rapidly adopted by hospitals in the United States and Europe for use in the treatment of a wide range of conditions. The most widely used clinical robotic surgical system includes a camera arm and mechanical arms with surgical instruments attached to them. The surgeon controls the arms while seated at a computer console near the operating table. The console gives the surgeon a high-definition, magnified, 3-D view of the surgical site. The surgeon leads other team members who assist during the operation. Surgeons who use the robotic system find that for many procedures it enhances precision, flexibility and control during the operation and allows them to better see the site, compared with traditional techniques. Using robotic surgery, surgeons can perform delicate and complex procedures that may have been difficult or impossible with other methods.",
+    "equip_img": "https://i.ibb.co/mzYjVFD/equipment-2.jpg",
+    "price": "35000",
+    "imported_year": "2019",
+    "incharge": "Dr. Jaxon Dobes"
+  },
+  {
+    "equip_id": "eq-03",
+    "equip_name": "Positron emission tomography (PET) ",
+    "imported": "Germany",
+    "text": "A positron emission tomography (PET) scan is an imaging test that can help reveal the metabolic or biochemical function of your tissues and organs. The PET scan uses a radioactive drug (tracer) to show both normal and abnormal metabolic activity. A PET scan can often detect the abnormal metabolism of the tracer in diseases before the disease shows up on other imaging tests, such as computerized tomography (CT) and magnetic resonance imaging (MRI). The tracer is most often injected into a vein within your hand or arm. The tracer will then collect into areas of your body that have higher levels of metabolic or biochemical activity, which often pinpoints the location of the disease. The PET images are typically combined with CT or MRI and are called PET-CT or PET-MRI scans. A PET scan is an effective way to help identify a variety of conditions, including cancer, heart disease and brain disorders. Your doctor can use this information to help diagnose, monitor or treat your condition.",
+    "equip_img": "https://i.ibb.co/YRX38PK/equipment-3.jpg",
+    "price": "25000",
+    "imported_year": "2010",
+    "incharge": "Dr. Zoe Zukoski"
+  },
+  {
+    "equip_id": "eq-04",
+    "equip_name": "Proton Beam Therapy Systems",
+    "imported": "USA",
+    "text": "Proton therapy destroys tumors with a precise, targeted dose of radiation. It is superior to traditional photon (x-ray) radiation because it minimizes radiation exposure to nearby healthy tissue, potentially reducing or eliminating short and long term treatment complications. This makes proton therapy the preferred treatment option for patients with cancers in sensitive locations, such as near the brain, spine, heart and eye. The advantage of proton therapy comes from a phenomenon known as the Bragg Peak. Unlike photons, protons can be charged to reach the exact depth where a tumor is located, then stop. Very little proton radiation continues past the tumor site. Despite the promise of proton therapy to help many patients, it is only now becoming widely adopted. Traditional proton therapy systems were too expensive, too large and much too complex for most cancer treatment centers.",
+    "equip_img": "https://i.ibb.co/C6s9kZB/equipment-4.jpg",
+    "price": "20000",
+    "imported_year": "2020",
+    "incharge": "Dr. Orville Galleta"
+  },
+  {
+    "equip_id": "eq-05",
+    "equip_name": "Hemofiltration Machine",
+    "imported": "Germany",
+    "text": "A hemofiltration machine is a device used in hemofiltration therapy to replace the function of the kidneys in acute renal failure. The patient’s blood flows into the machine which removes waste products and water before replacing the removed fluid and returning it to the patient. If caught and treated early enough, acute renal failure can be reversed using this process. To promote your Products or Services in the News-Medical.Net Directory please email advertising@news-medical.net.",
+    "equip_img": "https://i.ibb.co/ZBgvkgL/equipment-5.jpg",
+    "price": "30000",
+    "imported_year": "2018",
+    "incharge": "Dr. Pedro Jira"
+  }
+]

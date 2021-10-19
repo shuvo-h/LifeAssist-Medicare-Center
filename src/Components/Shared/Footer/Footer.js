@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className='pt-4'>
             <Container>
                 <Row>
-                    <Col className="d-flex">
+                    <Col lg={3} md={6} sm={12}  className="d-flex">
                         <div className="my-auto">
                             <h5>SUBSCRIBE NEWSLETTER</h5>
                             <Form>
@@ -19,7 +19,7 @@ const Footer = () => {
                             </Form>
                         </div>
                     </Col>
-                    <Col className="d-flex flex-column">
+                    <Col lg={3} md={6} sm={12} className="d-flex flex-column">
                         <h5>QUICK LINKS</h5>
                         <Link to="" className="btn-hover-effect text-white fw-bold">About Us</Link>
                         <Link to="" className="btn-hover-effect text-white fw-bold">Our Doctors</Link>
@@ -28,14 +28,14 @@ const Footer = () => {
                         <Link to="" className="btn-hover-effect text-white fw-bold">Contact</Link>
                         <Link to="" className="btn-hover-effect text-white fw-bold">Appointment</Link>
                     </Col>
-                    <Col className="d-flex flex-column">
+                    <Col lg={3} md={6} sm={12} className="d-flex flex-column">
                         <h5>HELP LINKS</h5>
                         <Link to="" className="btn-hover-effect text-white fw-bold">Departments</Link>
                         <Link to="" className="btn-hover-effect text-white fw-bold">Sponsors</Link>
                         <Link to="" className="btn-hover-effect text-white fw-bold">FAQs</Link>
                         <Link to="" className="btn-hover-effect text-white fw-bold">Emergency Unit</Link>
                     </Col>
-                    <Col>
+                    <Col lg={3} md={6} sm={12}>
                         <h5>CONTACT</h5>
                         <p className="text-white">Pratt AveEl Paso, TX 79936,<br />
                             United States of America</p>

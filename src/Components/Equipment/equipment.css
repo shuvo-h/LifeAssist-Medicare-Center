@@ -1,0 +1,8 @@
+.equipment-card{
+    box-shadow: 0px 0px 2px 1px rgba(153, 205, 50, 0.562);
+    transition: transform 0.3s linear;
+}
+
+.equipment-card:hover{
+    transform: scale(1.03);
+}

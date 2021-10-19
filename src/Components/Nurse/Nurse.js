@@ -26,3 +26,4 @@ const Nurse = (props) => {
 };
 
 export default Nurse;
+

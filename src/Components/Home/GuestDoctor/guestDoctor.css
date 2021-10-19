@@ -1,5 +1,5 @@
 .guest-dr{
-    transform: translateY(-40px);
+    /* transform: translateY(-30px); */
     background-color: rgba(61, 194, 204, 0.377);
     backdrop-filter: blur(15px);
     z-index: 2;

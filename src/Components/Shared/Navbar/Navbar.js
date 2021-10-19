@@ -24,7 +24,7 @@ return (
               <Nav.Link as={Link} to="/doctors" className="nav-item text-white fw-bold">Doctors</Nav.Link>
               <Nav.Link as={Link} to="/nurses" className="nav-item text-white fw-bold">Nurses</Nav.Link>
               <Nav.Link as={Link} to="/events" className="nav-item text-white fw-bold">Events</Nav.Link>
-              <Nav.Link as={Link} to="/laboratories" className="nav-item text-white fw-bold">Laboratory</Nav.Link>
+              <Nav.Link as={Link} to="/laboratory" className="nav-item text-white fw-bold">Laboratory</Nav.Link>
               <Nav.Link as={Link} to="/regular-appointment-form" className="nav-item nav-appointment-btn rounded fw-bold me-2">Appointment</Nav.Link>
               {
                   user.email ? <button onClick={handleLogOut} className="bg-light text-success fw-bold rounded border-0"  to="/login">LogOut({user.displayName || user.email})</button> : <Link className="text-warning fw-bold d-flex align-items-center text-decoration-none border border-warning rounded-circle" to="/login">Login</Link>
