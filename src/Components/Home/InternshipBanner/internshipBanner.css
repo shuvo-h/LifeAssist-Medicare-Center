@@ -1,0 +1,18 @@
+
+.internship-content{
+    background-image: url('../../../images/internship-background/internship-background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.internship-content ul{
+    list-style: none;
+}
+
+.intern-apply-btn{
+    background-color: skyblue;
+}
+.intern-apply-btn:hover{
+    background-color: rgb(66, 157, 241);
+    color: white;
+}

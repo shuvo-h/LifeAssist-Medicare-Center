@@ -10,6 +10,7 @@ const Register = () => {
     const history = useHistory();
     const {createAccountWithEmailPassword,auth,updateNewName, setIsLoading, setUser, verifyEmail, error,setError} = useAuth();
 
+    // method to set name during new registration 
     const setUserName = () =>{
         updateNewName(auth.currentUser, {
             displayName: name
@@ -19,10 +20,13 @@ const Register = () => {
           .finally(()=>setIsLoading(false))
     }
 
+
+    // registration method described 
     const handleRegistration = (e) => {
         e.preventDefault();
         setIsLoading(true)
         
+        // validate the input email address 
         if (!/(?=.{1,64}@)[A-Za-z0-9_-]+(\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,})/.test(email)) {
             setError("Please Input a valid email address");
             return;
@@ -30,6 +34,7 @@ const Register = () => {
             setError("");
         }
 
+        // validate the password 
         if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
             setError('Password need atleast two uppercase letters.');
             return;
@@ -48,6 +53,7 @@ const Register = () => {
             setError('');
         }
 
+        // complete all functionality to create new user 
         createAccountWithEmailPassword(email, password)
         .then(result=>{
             setUser(result.user);

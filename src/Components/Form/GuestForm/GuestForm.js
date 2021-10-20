@@ -8,7 +8,7 @@ import useLoadedData from '../../../hooks/useLoadedData';
 const GuestForm = () => {
     const {guestDoctorId} = useParams();
     const allGuestDoctors = useLoadedData('/guest-doctors.json');
-    console.log(allGuestDoctors);
+    
     const appointmentDoctor = allGuestDoctors.find(doctor=> doctor.id === guestDoctorId);
     const {credential, img_uri, speciality, title, visit_Time} = appointmentDoctor || {};
 

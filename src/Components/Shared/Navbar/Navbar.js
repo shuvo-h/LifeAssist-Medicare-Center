@@ -12,6 +12,7 @@ const App = () => {
   const history = useHistory();
   const {user, LogOut} = useAuth();
 
+  // describe logout method and redirect to home 
   const handleLogOut = () =>{
     LogOut();
     history.push('/home');

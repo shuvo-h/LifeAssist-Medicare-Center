@@ -60,9 +60,9 @@ function App() {
               <PrivateRoute exact path="/nurses">
                 <Nurses></Nurses>
               </PrivateRoute>
-              <Route exact path="/services">
+              <PrivateRoute exact path="/services">
                 <Services></Services>
-              </Route>
+              </PrivateRoute>
               <Route exact path="/home">
                 <Home></Home>
               </Route>

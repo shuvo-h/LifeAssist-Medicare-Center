@@ -1,7 +1,5 @@
 import React,  { useState } from 'react';
 import { useHistory, useLocation } from "react-router-dom";
-
-import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './login.css';
 import { IconContext } from "react-icons";
@@ -19,6 +17,7 @@ const Login = () => {
     const registerFormHistory = useHistory();
     const location = useLocation();
 
+    // login form method described 
     const handleLoginForm = (e) =>{
         e.preventDefault();
         setIsLoading(true);
@@ -31,6 +30,8 @@ const Login = () => {
             .catch(error=>setError(error.message))
             .finally(()=>setIsLoading(false))
     }
+
+    // login with 3rd pary authorization method described 
     const handleLoginWithGoogle = () =>{
         setIsLoading(true);
         signInWithGoogle()
@@ -62,6 +63,8 @@ const Login = () => {
         .catch(error=>setError(error.message))
             .finally(()=>setIsLoading(false))
     }
+
+    // change the login form to registration form 
     const handleRegisterToggle = () =>{
         setError("");
         registerFormHistory.push('/register');

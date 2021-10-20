@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './equipment.css';
 
 const Equipment = (props) => {
-    const {equip_id, equip_name, equip_img, imported, imported_year, incharge, price, text} = props.equipment;
+    const {equip_id, equip_name, equip_img, imported, imported_year, incharge, text} = props.equipment;
 
     const cartText = text.slice(0, 100);
 

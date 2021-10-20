@@ -6,6 +6,7 @@ import useAuth from '../../hooks/useAuth';
 
 const PrivateRoute = ({children, ...rest}) => {
     const {user,isLoading} = useAuth();
+    // retuen if the data is loading 
     if (isLoading) {
         return <Spinner  className="spin-loader mx-auto d-block mt-5 fs-1" animation="border" variant="primary" />;
     }

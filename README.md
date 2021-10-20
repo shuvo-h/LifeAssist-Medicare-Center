@@ -17,10 +17,17 @@ This project is developed for a privet hospital wjich name is "LifeAssist MediCa
  - [Opportunity to do internship with quality doctors]()
  - [Protected Laboratories information]()
  - [Check the profile of nurses]()
+ - [All pages are responsive]()
+
+  
+## Language and Frameworks
+
+- [React is used to organized code]()
+- [Bootstrap and some custome CSS has been used to do style]()
+- [I used ES6 in this project.]()
+- [React Icon has beed used to make more style]()
 
   
 ## Developed by
 
 - [Shuvo Haldar](https://github.com/shuvo-h)
-
-  

@@ -8,12 +8,14 @@ import './serviceDetails.css';
 const ServiceDetails = () => {
     const {serviceId} = useParams();
 
+    // find the selected service item from the databage 
     const allServicesUrl = '/life-assist-medicare-services.json';
     const allServices = useLoadedData(allServicesUrl);
 
     const selectedService = allServices.find(service=>service.service_id === serviceId) || {};
     const {service_dept, service_fees, service_img, service_manager, service_name, service_txt} = selectedService;
     
+    // find the employees related to this service from the databage 
     const employeeUrl = "/service-employee-db.json";
     const employeeList = useLoadedData(employeeUrl);
     const selectedEmployees = employeeList.filter(employee=>employee.serv_area === service_name);
