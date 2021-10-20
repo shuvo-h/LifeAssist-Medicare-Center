@@ -7,24 +7,29 @@ const Register = () => {
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
-    const {createAccountWithEmailPassword,auth,updateNewName, setIsLoading, setUser, error,setError} = useAuth();
-
     const history = useHistory();
+    const {createAccountWithEmailPassword,auth,updateNewName, setIsLoading, setUser, verifyEmail, error,setError} = useAuth();
 
     const setUserName = () =>{
         updateNewName(auth.currentUser, {
             displayName: name
           })
-          .then(result=>{})
+          .then((result)=>{})
+          .catch(error=>setError(error.message))
+          .finally(()=>setIsLoading(false))
     }
 
     const handleRegistration = (e) => {
         e.preventDefault();
         setIsLoading(true)
-        if (!/(?=.*[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-])/.test(email)) {
-            setError('Please input a valid email address');
+        
+        if (!/(?=.{1,64}@)[A-Za-z0-9_-]+(\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,})/.test(email)) {
+            setError("Please Input a valid email address");
             return;
+        }else{
+            setError("");
         }
+
         if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
             setError('Password need atleast two uppercase letters.');
             return;
@@ -39,29 +44,38 @@ const Register = () => {
         else if (!/(?=.*[a-z].*[a-z].*[a-z])/.test(password)) {
             setError('Password need atleast  three lowercase letters.');
             return;
+        }else{
+            setError('');
         }
+
         createAccountWithEmailPassword(email, password)
         .then(result=>{
             setUser(result.user);
             setError('');
             setUserName();
+            verifyEmail();
+            history.push('/home');
+            window.location.reload();
         })
         .catch(error=>setError(error.message))
-        .finally(()=>setIsLoading(false))
-        history.push('/home')
+        .finally(()=>{
+            setIsLoading(false);
+        })
+        
     }
     return (
-        <div className="register-container mt-5">
+        <div className="register-container mt-5" >
             <h2 className="text-center">Registration From</h2>
-            <form  className="login-form mx-auto">
+            <form  className="login-form mx-auto" onSubmit={handleRegistration}>
                 <label htmlFor="name">Full Name: </label> <br />
-                <input onBlur={(e)=>setName(e.target.value)} type="text" name="name" placeholder="write your full name" id="registration-name" /><br />
+                <input onBlur={(e)=>setName(e.target.value)} type="text" name="name" placeholder="write your full name" id="registration-name"  required/><br />
                 <label htmlFor="email">Email: </label> <br />
-                <input onBlur={(e)=>setEmail(e.target.value)} type="email" name="email" placeholder="write your email" id="registration-email" /><br />
+                <input onBlur={(e)=>setEmail(e.target.value)} type="email" name="email" placeholder="write your email" id="registration-email" required/><br />
                 <label htmlFor="password">Password: </label><br />
-                <input onBlur={(e)=>setPassword(e.target.value)} type="password" name="password" placeholder="write your password" id="password" /><br />
+                <input onBlur={(e)=>setPassword(e.target.value)} type="password" name="password" placeholder="write your password" id="password" required/><br />
                 <p className="text-danger text-center">{error}</p>
-                <button className="btn-login border-0 d-block mx-auto my-4 px-5 py-1 rounded fs-3 fw-bold" onClick={handleRegistration}>Submit</button>
+                
+                <button className="btn-login border-0 d-block mx-auto my-4 px-5 py-1 rounded fs-3 fw-bold"  type="submit">Submit</button>
             </form>
             <div className="text-center">
                 <p className="d-inline me-2">Already have an account?</p>

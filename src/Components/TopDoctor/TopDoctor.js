@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './topDoctor.css';
 
 const TopDoctor = (props) => {
-    const {name, fees, doc_img, designation, specialization} = props.topDoctor || {};
+    const {doc_id, name, fees, doc_img, designation, specialization} = props.topDoctor || {};
     const stringifySpecializ = specialization.join(', ');
     return (
         <Col lg={6} md={12} sm={12} className="p-3">
@@ -21,7 +21,7 @@ const TopDoctor = (props) => {
                     </Col>
                 </Row>
                 <div className="d-flex justify-content-around mt-3">
-                    <Link to="" className="appointment-profile-btn px-4 py-1 rounded fw-bold">Appointment</Link>
+                    <Link to={`/personal-appointment-form/${doc_id}`}  className="appointment-profile-btn px-4 py-1 rounded fw-bold">Appointment</Link>
                     <Link to="" className="appointment-profile-btn px-4 py-1 rounded fw-bold">Profile</Link>
                 </div>
             </div>

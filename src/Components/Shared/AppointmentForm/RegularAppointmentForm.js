@@ -30,7 +30,7 @@ const RegularAppointmentForm = () => {
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control value={user.email} type="email" placeholder="Enter email" />
+                    <Form.Control value={user.email} type="email" placeholder="Enter email" readOnly/>
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridPassword">
@@ -51,7 +51,7 @@ const RegularAppointmentForm = () => {
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>Doctor</Form.Label>
+                    <Form.Label>Doctor's list</Form.Label>
                     <Form.Select defaultValue="Choose...">
                         <option>Choose your doctor's name</option>
                         <option>doctor 1</option>

@@ -21,6 +21,7 @@ const Login = () => {
     const handleLoginForm = (e) =>{
         e.preventDefault();
         setIsLoading(true);
+        
         SignInExistUserWithEmailPassword(email,password)
             .then(()=>{
                 history.push(location.state?.from)
@@ -55,6 +56,7 @@ const Login = () => {
         .then(()=>{
             history.push(location.state?.from)
             setError("");
+            window.location.reload();
         })
         .catch(error=>setError(error.message))
             .finally(()=>setIsLoading(false))
@@ -62,12 +64,13 @@ const Login = () => {
     return (
         <div className="login-container mt-5">
             <h2 className="text-center">Login From</h2>
-            <form onSubmit={handleLoginForm} className="login-form mx-auto">
+            <form className="login-form mx-auto">
                 <label htmlFor="email">Email: </label> <br />
                 <input onBlur={(e)=>setEmail(e.target.value)} type="email" name="email" placeholder="write your email" id="email" /><br />
                 <label htmlFor="password">Password: </label><br />
                 <input onBlur={(e)=>setPassword(e.target.value)} type="password" name="password" placeholder="write your password" id="password" /><br />
-                <button className="btn-login border-0 d-block mx-auto my-4 px-5 py-1 rounded fs-3 fw-bold" type="submit">Login</button>
+                <p className="text-center text-danger mt-4">{error}</p>
+                <button className="btn-login border-0 d-block mx-auto my-4 px-5 py-1 rounded fs-3 fw-bold" onClick={handleLoginForm}>Login</button>
             </form>
             <div className="text-center">
                 <p className="d-inline me-2">New here?</p>

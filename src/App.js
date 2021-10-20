@@ -9,6 +9,7 @@ import Home from './Components/Home/Home';
 import Laboratory from './Components/Laboratory/Laboratory';
 import NotFound from './Components/NotFound/NotFound';
 import Nurses from './Components/Nurses/Nurses';
+import PersonalAppointmentForm from './Components/PersonalAppointmentForm/PersonalAppointmentForm';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Components/Services/ServiceDetails/ServiceDetails';
 import Services from './Components/Services/Services';
@@ -28,6 +29,9 @@ function App() {
               </PrivateRoute>
               <PrivateRoute exact path="/regular-appointment-form">
                 <RegularAppointmentForm></RegularAppointmentForm>
+              </PrivateRoute>
+              <PrivateRoute exact path="/personal-appointment-form/:doctorId">
+                <PersonalAppointmentForm></PersonalAppointmentForm>
               </PrivateRoute>
               <Route exact path="/login">
                 <Login></Login>

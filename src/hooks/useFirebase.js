@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import firebaseInitialization from '../firebase/firebase.init';
-import { getAuth, signInWithPopup,updateProfile, GoogleAuthProvider, onAuthStateChanged ,createUserWithEmailAndPassword , signInWithEmailAndPassword, FacebookAuthProvider, GithubAuthProvider  , signOut } from "firebase/auth";
+import { getAuth, signInWithPopup,updateProfile, GoogleAuthProvider, onAuthStateChanged ,createUserWithEmailAndPassword , signInWithEmailAndPassword, FacebookAuthProvider, GithubAuthProvider ,sendEmailVerification  , signOut } from "firebase/auth";
 
 
 
@@ -36,13 +36,11 @@ const useFirebase = () => {
     const createAccountWithEmailPassword = (email,password) =>{
         setIsLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
-            
     }
 
     const SignInExistUserWithEmailPassword = (email,password) =>{
         setIsLoading(true);
         return signInWithEmailAndPassword(auth, email,password)
-            
     }
 
     const signInWithFacebook = () => {
@@ -54,9 +52,21 @@ const useFirebase = () => {
         setIsLoading(true);
         return signInWithPopup(auth,gitHubProvider)
     }
-
+    
     const updateNewName = (auth,name) =>{
         return updateProfile(auth, name)
+    }
+    
+    const verifyEmail = () =>{
+        setIsLoading(true);
+        sendEmailVerification(auth.currentUser)
+        .then(()=>{
+            setIsLoading(true);
+        })
+        .catch(error=>setError(error.message))
+            .finally(()=>{
+                setIsLoading(false);
+            })
     }
 
     const LogOut = () =>{
@@ -71,15 +81,16 @@ const useFirebase = () => {
         user,
         error,
         isLoading,
-        updateNewName,
-        setError,
         setUser,
+        setError,
+        verifyEmail,
         setIsLoading,
         signInWithGoogle,
         createAccountWithEmailPassword,
         SignInExistUserWithEmailPassword,
         signInWithFacebook,
         signInWithGitHub,
+        updateNewName,
         LogOut
     }
 };

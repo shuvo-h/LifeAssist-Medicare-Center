@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import './doctor.css';
 
 const Doctor = (props) => {
-    const {name, fees, doc_img, designation} = props.doctor || {};
+    
+    const {doc_id, name, fees, doc_img, designation} = props.doctor || {};
+    
     return (
         <Col lg={4} md={6} sm={12} className="p-3">
             <div  className="doctor-cart p-3 rounded">
@@ -19,7 +21,7 @@ const Doctor = (props) => {
                     </Col>
                 </Row>
                 <div className="d-flex justify-content-around mt-3">
-                    <Link to="" className="appointment-profile-btn px-4 py-1 rounded fw-bold">Appointment</Link>
+                    <Link to={`/personal-appointment-form/${doc_id}`} className="appointment-profile-btn px-4 py-1 rounded fw-bold">Appointment</Link>
                     <Link to="" className="appointment-profile-btn px-4 py-1 rounded fw-bold">Profile</Link>
                 </div>
             </div>

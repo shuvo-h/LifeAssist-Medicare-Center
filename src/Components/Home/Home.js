@@ -4,6 +4,7 @@ import useLoadedData from '../../hooks/useLoadedData';
 import GuestDoctor from './GuestDoctor/GuestDoctor';
 import './home.css';
 import { GiCheckMark } from 'react-icons/gi';
+import { AiFillSchedule } from 'react-icons/ai';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
 import HomeCarousel from './HomeCarousel/HomeCarousel';
@@ -38,7 +39,7 @@ const Home = () => {
                             <li> <IconContext.Provider value={{ color: "green", className: "global-class-name" }}><GiCheckMark /></IconContext.Provider> Evening OPD</li>
                         </ul>
                         <div className="d-flex justify-content-center">
-                        <Link to="/regular-appointment-form" className="banner-appointment-btn px-4 py-2 rounded bg-success fw-bold text-center">MAKE AN APPOINTMENT</Link>
+                        <Link to="/regular-appointment-form" className="banner-appointment-btn px-4 py-2 rounded bg-success fw-bold text-center"><IconContext.Provider value={{ color: "white", size: "25", className: "me-2 global-class-name" }}><AiFillSchedule /></IconContext.Provider>MAKE AN APPOINTMENT</Link>
                         </div>
                     </div>
                 </Col>
@@ -56,10 +57,10 @@ const Home = () => {
             <div className="mt-5">
                 <Services></Services>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 bg-light">
                 <h2 className="text-center ">Our Top Doctors</h2>
                 <hr />
-                <Row>
+                <Row className="p-2">
                     {
                         topDoctors.map(topDoctor => <TopDoctor topDoctor={topDoctor} key={topDoctor.doc_id}></TopDoctor>)
                     }
