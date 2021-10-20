@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './equipment.css';
 
 const Equipment = (props) => {
-    const {equip_name, equip_img, imported, imported_year, incharge, price, text} = props.equipment;
+    const {equip_id, equip_name, equip_img, imported, imported_year, incharge, price, text} = props.equipment;
 
     const cartText = text.slice(0, 100);
 
@@ -18,7 +18,7 @@ const Equipment = (props) => {
                     <p><strong>{equip_name}</strong>(Imported from {imported}, {imported_year})</p>
                     <p><strong>Incharge: {incharge}</strong></p>
                     <p>{cartText}.....</p>
-                    <Link to="" className="bg-light rounded">See Details</Link>
+                    <Link to={`/laboratory/${equip_id}`} className="bg-light rounded">See Details</Link>
                 </Col>
             </Row>
         </Col>

@@ -91,7 +91,7 @@ const Home = () => {
                                 Basic necessary equipments will be provided by us.
                             </li>
                         </ul>
-                         <p className="text-end">For Internship to join With recommendation <Link to="" className="intern-apply-btn  text-decoration-none fs-2 px-2 py-1 rounded border">Apply here</Link></p>
+                         <p className="text-end">For Internship to join With recommendation <Link to="/internship-form" className="intern-apply-btn  text-decoration-none fs-2 px-2 py-1 rounded border">Apply here</Link></p>
                     </Col>
                     <Col lg={6}>
                         <img className="img-fluid ms-auto d-block p-4 rounded-circle" src="https://i.ibb.co/fkGtRgT/nursing-Internship.jpg" alt="" />

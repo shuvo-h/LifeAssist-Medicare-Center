@@ -5,11 +5,14 @@ import Login from './Components/Admin/Login/Login';
 import Register from './Components/Admin/Register/Register';
 import AuthProvider from './Components/Context/AuthProvider';
 import Doctors from './Components/Doctors/Doctors';
+import EquipmentDetails from './Components/Equipment/EquipmentDetails/EquipmentDetails';
+import GuestForm from './Components/Form/GuestForm/GuestForm';
+import InternshipForm from './Components/Form/InternshipForm/InternshipForm';
+import PersonalAppointmentForm from './Components/Form/PersonalAppointmentForm/PersonalAppointmentForm';
 import Home from './Components/Home/Home';
 import Laboratory from './Components/Laboratory/Laboratory';
 import NotFound from './Components/NotFound/NotFound';
 import Nurses from './Components/Nurses/Nurses';
-import PersonalAppointmentForm from './Components/PersonalAppointmentForm/PersonalAppointmentForm';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Components/Services/ServiceDetails/ServiceDetails';
 import Services from './Components/Services/Services';
@@ -30,8 +33,17 @@ function App() {
               <PrivateRoute exact path="/regular-appointment-form">
                 <RegularAppointmentForm></RegularAppointmentForm>
               </PrivateRoute>
+              <PrivateRoute exact path="/guest-appointment-form/:guestDoctorId">
+                <GuestForm></GuestForm>
+              </PrivateRoute>
+              <PrivateRoute exact path="/internship-form">
+                <InternshipForm></InternshipForm>
+              </PrivateRoute>
               <PrivateRoute exact path="/personal-appointment-form/:doctorId">
                 <PersonalAppointmentForm></PersonalAppointmentForm>
+              </PrivateRoute>
+              <PrivateRoute exact path="/laboratory/:equipmentId">
+                <EquipmentDetails></EquipmentDetails>
               </PrivateRoute>
               <Route exact path="/login">
                 <Login></Login>

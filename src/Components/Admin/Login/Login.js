@@ -13,15 +13,16 @@ import { BsGithub } from 'react-icons/bs';
 const Login = () => {
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
+    const history = useHistory();
     const {SignInExistUserWithEmailPassword, signInWithGoogle, signInWithFacebook, signInWithGitHub, setIsLoading, error,setError} = useAuth();
 
-    const history = useHistory();
+    const registerFormHistory = useHistory();
     const location = useLocation();
 
     const handleLoginForm = (e) =>{
         e.preventDefault();
         setIsLoading(true);
-        
+        setError("");
         SignInExistUserWithEmailPassword(email,password)
             .then(()=>{
                 history.push(location.state?.from)
@@ -61,6 +62,10 @@ const Login = () => {
         .catch(error=>setError(error.message))
             .finally(()=>setIsLoading(false))
     }
+    const handleRegisterToggle = () =>{
+        setError("");
+        registerFormHistory.push('/register');
+    }
     return (
         <div className="login-container mt-5">
             <h2 className="text-center">Login From</h2>
@@ -74,7 +79,7 @@ const Login = () => {
             </form>
             <div className="text-center">
                 <p className="d-inline me-2">New here?</p>
-                <Link to="/register">Register first</Link>
+                <button onClick={handleRegisterToggle} className="border-0 text-decoration-underline bg-white text-primary">Register first</button>
             </div>
                 <p className="text-center mt-4"><strong>Or login with</strong></p>
             <div className="d-flex justify-content-center mt-4">

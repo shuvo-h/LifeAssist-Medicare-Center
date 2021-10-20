@@ -45,7 +45,7 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-                <p className="text-white m-0 mt-2 p-2 bg-primary text-center"> &copy; 2022 Copyright by Medico. All rights reserved.</p>
+                <p className="text-white m-0 mt-2 p-2 bg-primary text-center"> &copy; 2021 Copyright by Medico. All rights reserved.</p>
         </footer>
     );
 };

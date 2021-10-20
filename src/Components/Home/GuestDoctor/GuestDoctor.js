@@ -1,9 +1,10 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './guestDoctor.css';
 
 const GuestDoctor = (props) => {
-    const {credential, img_uri, speciality, title, visit_Time} = props.guestDoctor;
+    const {id, credential, img_uri, speciality, title, visit_Time} = props.guestDoctor;
     return (
         <Col  lg={3} sm={12} className=" guest-dr mx-lg-4 p-2 text-center">
             <div>
@@ -16,7 +17,7 @@ const GuestDoctor = (props) => {
             <div>
                 <h6 className="m-0">{title}</h6>
                 <p className="m-0">{credential}</p>
-                <button className="btn-primary rounded px-4">Book</button>
+                <Link to={`/guest-appointment-form/${id}`} className="btn-primary rounded px-4">Book</Link>
             </div>
         </Col>
     );

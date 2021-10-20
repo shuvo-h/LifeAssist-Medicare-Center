@@ -1,0 +1,7 @@
+.guest-app-form-container{
+    min-height: calc(100vh - 342px);
+}
+.guest-form-img{
+    width: 200px;
+    height: 200px;
+}

@@ -2,6 +2,7 @@
     background-color: rgba(81, 81, 230, 0.815);
     height: 70px;
 }
+
 .nav-item{
     color: white;
 }
@@ -21,4 +22,25 @@
 }
 .profile-img{
     width: 40px;
+}
+
+@media(max-width: 992px) {
+    .nav-items {
+        background-color: rgba(121, 166, 224, 0.212) !important;
+        /* background: rgba(255,255,255,0.5); */
+        backdrop-filter: blur(4px);
+    }
+    .nav-item{
+        color: black !important;
+    }
+    .nav-item:hover{
+        background-color: skyblue;
+    }
+    .login-btn{
+        display: block;
+        margin: auto;
+        color: blue !important;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
